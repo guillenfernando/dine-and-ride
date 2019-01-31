@@ -1,0 +1,200 @@
+/*
+Theme Name: Dine & Ride
+Author: Fernando Guillen
+Description: Dine & Ride offers free rides from and to clients accommodations in Orlando, FL. This theme includes the following pages: Homepage, Booking and Contact Us.
+Version: 1.0
+*/
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#home{
+    background-image: url("images/hero-backgroundV2.png");
+    padding-top: calc(26px + 14vw);
+    padding-bottom: calc(26px + 14vw);
+    background-size: cover;
+}
+
+.hero-title{
+    font-size: calc(18px + 2vw);
+    color: white;
+}
+
+.hero-description{
+    font-size: calc(10px + 2vw);
+    line-height: calc(12px + 2vw);
+    margin-top: calc(10px + 1vw);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+button.button-book{
+    font-size: calc(10px + 1vw);
+    border-radius: 20px;
+    border-width: 2px;
+    background-color: #33bb77;
+    color: white;
+    border-color: #33bb77;
+}
+
+button.button-book:hover, button.button-book:active, button.button-book:focus {
+    background-color: #003300;
+    border-color: #003300;
+}
+
+.subtitle-fpage{
+    font-size: calc(15px + 2vw);
+    font-weight: 600;
+    text-align: center;
+    color: #003300;
+}
+
+.subtitle-line{
+    width: 80px;
+    height: 5px;
+    background-color: #030;
+    margin: 16px 0;
+    display: inline-block;
+    margin-bottom: calc(18px + 3vw);
+}
+
+#how-works{
+    padding-top: calc(20px + 6vw);
+    padding-bottom: calc(10px + 3vw);
+    text-align: center;
+}
+
+.hwork-title{
+    color: #003300;
+    font-size: calc(8px + 2vw);
+}
+
+.about-us-subtitle{
+    color: #003300;
+    font-size: calc(12px + 2vw);
+}
+
+.hwork-description, .about-us-description, .team-description{
+    color: #003300;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: calc(7px + 2vw);
+}
+
+#about-us, #our-team{
+    padding-top: calc(10px + 3vw);
+    padding-bottom: calc(10px + 3vw);
+    text-align: center;
+}
+
+#our-team{
+    background-color: #fafafa;
+}
+
+img.hwork-img{
+    width: calc(26px + 12vw);
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+img.about-us-img{
+    width: calc(50px + 80vw);
+}
+
+.team-member{
+    padding-top: 24px;
+    color: #003300;
+    font-size: calc(12px + 2vw);
+}
+
+.team-position{
+    font-family: 'Lato', sans-serif;
+    color: #003300;
+    font-size: calc(13px + 1vw);
+}
+
+.team-description{
+    padding-top: 4px;
+    padding-bottom: 24px;
+}
+
+.aboutus-content-wrapper{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+#contact{
+    background-color: #003300;
+    padding-top: calc(26px + 14vw);
+    padding-bottom: calc(26px + 14vw);
+    background-size: cover;
+}
+
+#contact h2{
+    color: white;
+}
+
+button.button-contact{
+    font-size: calc(8px + 2vw);
+    border-radius: 20px;
+    border-width: 2px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    margin-top: 20px;
+}
+
+button.button-contact:hover, button.button-contact:active, button.button-contact:focus {
+    background-color: white;
+    border-color: white;
+    color: #003300;
+}
+
+#footer{
+    padding: 12px;
+    font-size: 18px;
+}
+
+/*MEDIA QUERIES*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px) {
+
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+
+    img.about-us-img{
+        width: calc(35px + 55vw);
+    }
+
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+
+    img.about-us-img{
+        width: calc(20px + 47vw);
+    }
+
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
+    img.about-us-img{
+        width: calc(50px + 45vw);
+    }
+
+}
