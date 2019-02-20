@@ -7,6 +7,153 @@ Version: 1.0
 
 body{
     font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#my-navbar{
+    background-color: white;
+}
+
+.navbar-toggler{
+    color: #003300;
+}
+
+.navbar-brand img{
+    width: 80%;
+}
+
+.menu-item{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.menu-item a{
+    padding: 6px;
+    color: #003300;
+    font-size: 18px;
+}
+
+.menu-item a:hover{
+    border: 1px solid;
+    border-color: #003300;
+    text-decoration: none;
+}
+
+.marker {
+    background-image: url('images/marker-logo.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #003300;
+    background-color: #fafafa;
+}
+
+.mapboxgl-popup-content p{
+    font-size: 14px;
+}
+
+.mapboxgl-popup-content h6{
+    font-weight: bold;
+}
+
+.map-wrapper{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    padding-top: 24px;
+}
+
+.map-wrapper #map{
+    left:0;
+    top:0;
+    bottom: 0;
+    width:100%;
+    position:absolute;
+    text-align: justify;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.form-subtitle{
+    padding-top: 34px;
+    color: #003300;
+    font-weight: 600;
+    text-align: center;
+    font-size: calc(12px + 2vw);
+}
+
+#restaurants-associated{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: none!important;
+}
+
+#restaurants-associated.active {
+    display: block!important;
+    text-align: justify;
+    border: 1px solid lightgray;
+}
+
+.restaurants-associated-title{
+    color: #003300;
+    font-weight: 600;
+    font-size: calc(8px + 1vw);
+    font-style: italic;
+    text-align: justify;
+    padding: 10px;
+}
+
+.restaurant-list{
+    text-align: justify;
+    color: #003300;
+    padding-left: 14px;
+}
+
+.restaurant-list li{
+    display: block;
+    list-style-type: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-weight: 600;
+}
+
+.restaurant-list span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.schedule-note{
+    padding-top: 34px;
+    padding-bottom: 12px;
+    color: #003300;
+    font-weight: 600;
+    text-align: center;
+    font-size: calc(8px + 2vw);
+    font-style: italic;
+}
+
+.booking-description, .contact-description{
+    color: #003300;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: calc(7px + 2vw);
 }
 
 #home{
@@ -29,7 +176,7 @@ body{
     font-family: 'Lato', sans-serif;
 }
 
-button.button-book{
+.button-book{
     font-size: calc(10px + 1vw);
     border-radius: 20px;
     border-width: 2px;
@@ -38,13 +185,36 @@ button.button-book{
     border-color: #33bb77;
 }
 
-button.button-book:hover, button.button-book:active, button.button-book:focus {
+.button-book:hover, .button-book:active, .button-book:focus {
+    background-color: #003300;
+    border-color: #003300;
+}
+
+.booking-wrapper, .contact-wrapper{
+    background-color: #fafafa;
+    padding-bottom: 34px;
+}
+
+.booking-wrapper .subtitle-line{
+    margin: 16px 0;
+}
+
+.booking-form-button, .contact-form-button{
+    font-size: calc(10px + 1vw);
+    border-radius: 20px;
+    border-width: 2px;
+    background-color: #33bb77;
+    color: white;
+    border-color: #33bb77;
+}
+
+.booking-form-button:hover, .booking-form-button:active, .booking-form-button:focus, .contact-form-button:hover, .contact-form-button:active, .contact-form-button:focus{
     background-color: #003300;
     border-color: #003300;
 }
 
 .subtitle-fpage{
-    font-size: calc(15px + 2vw);
+    font-size: calc(12px + 2vw);
     font-weight: 600;
     text-align: center;
     color: #003300;
@@ -60,7 +230,7 @@ button.button-book:hover, button.button-book:active, button.button-book:focus {
 }
 
 #how-works{
-    padding-top: calc(20px + 6vw);
+    padding-top: calc(10px + 3vw);
     padding-bottom: calc(10px + 3vw);
     text-align: center;
 }
@@ -92,14 +262,14 @@ button.button-book:hover, button.button-book:active, button.button-book:focus {
     background-color: #fafafa;
 }
 
-img.hwork-img{
+.hwork-img{
     width: calc(26px + 12vw);
     padding-top: 18px;
     padding-bottom: 18px;
 }
 
-img.about-us-img{
-    width: calc(50px + 80vw);
+.about-us-img{
+    width: calc(50px + 68vw);
 }
 
 .team-member{
@@ -119,7 +289,7 @@ img.about-us-img{
     padding-bottom: 24px;
 }
 
-.aboutus-content-wrapper{
+.aboutUs-content-wrapper{
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -135,7 +305,7 @@ img.about-us-img{
     color: white;
 }
 
-button.button-contact{
+.button-contact{
     font-size: calc(8px + 2vw);
     border-radius: 20px;
     border-width: 2px;
@@ -145,7 +315,7 @@ button.button-contact{
     margin-top: 20px;
 }
 
-button.button-contact:hover, button.button-contact:active, button.button-contact:focus {
+.button-contact:hover, .button-contact:active, .button-contact:focus {
     background-color: white;
     border-color: white;
     color: #003300;
@@ -160,12 +330,26 @@ button.button-contact:hover, button.button-contact:active, button.button-contact
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media screen and (max-width: 575.98px) {
-
+    .menu-item{
+        padding-top: 10px;
+    }
 }
 
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .hero-description{
+        font-size: calc(12px + 2vw);
+        line-height: calc(16px + 2vw);
+    }
+
+    .menu-item{
+        padding-top: 10px;
+    }
+
+    .schedule-note{
+        font-size: calc(5px + 2vw);
+    }
 
 }
 
@@ -173,8 +357,78 @@ button.button-contact:hover, button.button-contact:active, button.button-contact
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
 
-    img.about-us-img{
-        width: calc(35px + 55vw);
+    .hero-description{
+        line-height: calc(12px + 3vw);
+    }
+
+    .menu-item{
+        padding-top: 10px;
+    }
+
+    .subtitle-fpage{
+        font-size: calc(9px + 2vw);
+    }
+
+    .hwork-img{
+        width: calc(26px + 9vw);
+    }
+
+    .hwork-title{
+        font-size: calc(6px + 2vw);
+    }
+
+    .hwork-description{
+        font-size: calc(2px + 2vw);
+    }
+
+    .about-us-subtitle{
+        font-size: calc(6px + 2vw);
+    }
+
+    .about-us-description{
+        font-size: calc(2px + 2vw);
+    }
+
+    .about-us-img{
+        width: calc(30px + 64vw);
+    }
+
+    .team-member{
+        font-size: calc(6px + 2vw);
+    }
+
+    .team-position{
+        font-size: calc(10px + 1vw);
+    }
+
+    .team-description{
+        font-size: calc(2px + 2vw);
+    }
+
+    #contact{
+        padding-top: calc(26px + 10vw);
+        padding-bottom: calc(26px + 10vw);
+    }
+
+    .button-contact{
+        font-size: calc(10px + 1vw);
+    }
+
+    .form-subtitle{
+        font-size: calc(9px + 2vw);
+    }
+
+    .schedule-note{
+        font-size: calc(3px + 2vw);
+    }
+
+    .booking-description, .contact-description{
+        font-size: calc(2px + 2vw);
+    }
+
+    .contact-form-wrapper{
+        padding-top: calc(8px + 2vw);
+        padding-bottom: calc(8px + 2vw);
     }
 
 }
@@ -183,8 +437,93 @@ button.button-contact:hover, button.button-contact:active, button.button-contact
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
 
-    img.about-us-img{
-        width: calc(20px + 47vw);
+    .hero-description{
+        font-size: calc(8px + 2vw);
+        line-height: calc(16px + 2vw);
+    }
+
+    .subtitle-fpage{
+        font-size: calc(7px + 2vw);
+    }
+
+    .hwork-img{
+        width: calc(14px + 8vw);
+    }
+
+    .hwork-title{
+        font-size: calc(9px + 1vw);
+    }
+
+    .hwork-description{
+        font-size: calc(6px + 1vw);
+    }
+
+    .about-us-subtitle{
+        font-size: calc(4px + 2vw);
+    }
+
+    .aboutUs-content-wrapper{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .about-us-description{
+        font-size: calc(8px + 1vw);
+    }
+
+    .about-us-img{
+        width: calc(34px + 45vw);
+        padding-bottom: 40px;
+    }
+
+    .team-img{
+        width: 80%;
+    }
+
+    .team-member{
+        font-size: calc(4px + 2vw);
+    }
+
+    .team-position{
+        font-size: calc(8px + 1vw);
+    }
+
+    .team-description{
+        font-size: calc(8px + 1vw);
+    }
+
+    #contact{
+        padding-top: calc(26px + 10vw);
+        padding-bottom: calc(26px + 10vw);
+    }
+
+    .button-contact{
+        font-size: calc(10px + 1vw);
+    }
+
+    .form-subtitle{
+        font-size: calc(7px + 2vw);
+    }
+
+    .schedule-note{
+        font-size: calc(1px + 2vw);
+    }
+
+    .booking-description, .contact-description{
+        font-size: calc(1px + 2vw);
+    }
+
+    .booking-form-button, .contact-form-button{
+        font-size: calc(6px + 1vw);
+    }
+
+    .booking-form-wrapper{
+        padding-top: 12px;
+    }
+
+    .contact-form-wrapper{
+        padding-top: calc(8px + 2vw);
+        padding-bottom: calc(8px + 2vw);
     }
 
 }
@@ -193,8 +532,100 @@ button.button-contact:hover, button.button-contact:active, button.button-contact
 /* Extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
 
-    img.about-us-img{
-        width: calc(50px + 45vw);
+    #home{
+        padding-top: calc(26px + 17vw);
+        padding-bottom: calc(26px + 17vw);
+    }
+
+    .hero-description{
+        font-size: calc(4px + 2vw);
+        line-height: calc(16px + 2vw);
+    }
+
+    .subtitle-fpage{
+        font-size: calc(4px + 2vw);
+    }
+
+    .hwork-img{
+        width: calc(14px + 8vw);
+    }
+
+    .hwork-title{
+        font-size: calc(9px + 1vw);
+    }
+
+    .hwork-description{
+        font-size: calc(6px + 1vw);
+    }
+
+    .about-us-subtitle{
+        font-size: calc(4px + 2vw);
+    }
+
+    .aboutUs-content-wrapper{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .about-us-description{
+        font-size: calc(8px + 1vw);
+    }
+
+    .about-us-img{
+        width: calc(45px + 45vw);
+        padding-bottom: 40px;
+    }
+
+    .team-member{
+        font-size: calc(4px + 2vw);
+    }
+
+    .team-position{
+        font-size: calc(8px + 1vw);
+    }
+
+    .team-description{
+        font-size: calc(8px + 1vw);
+    }
+
+    #contact{
+        padding-top: calc(26px + 8vw);
+        padding-bottom: calc(26px + 8vw);
+    }
+
+    .button-contact{
+        font-size: calc(10px + 1vw);
+    }
+
+    .form-subtitle{
+        font-size: calc(14px + 1vw);
+    }
+
+    .booking-description, .contact-description{
+        font-size: calc(5px + 1vw);
+    }
+
+    .schedule-note{
+        font-size: calc(5px + 1vw);
+        padding: 0px;
+    }
+
+    .booking-form-button, .contact-form-button{
+        font-size: calc(2px + 1vw);
+    }
+
+    .booking-form-wrapper{
+        margin-top: 40px;
+        margin-bottom: 110px;
+    }
+
+    .contact-form-wrapper{
+        margin-top: 40px;
+        margin-bottom: calc(24px + 8vw);
+    }
+
+    .contact-wrapper .form-subtitle{
+        margin-top: calc(20px + 6vw);
     }
 
 }

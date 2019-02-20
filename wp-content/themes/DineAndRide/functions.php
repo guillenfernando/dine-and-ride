@@ -49,7 +49,7 @@ add_action('wp_enqueue_scripts', 'bootstrap');
 
 function customJS(){
     wp_deregister_script('script');
-    wp_register_script('script', ('/wp-content/themes/newTheme/script.js'), true);
+    wp_register_script('script', ('/wp-content/themes/DineAndRide/script.js'), true);
     wp_enqueue_script('script');
 }
 add_action('wp_enqueue_scripts', 'customJS');
@@ -59,7 +59,7 @@ function register_my_menus() {
     register_nav_menus(
         array(
             'header-menu' => __( 'Header Menu'),
-            'alternative-menu' => __( 'Alternative Menu')
+            'booking-menu' => __( 'Second Menu')
         )
     );
 }

@@ -11,39 +11,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400i|Noto+Sans+KR:500|Roboto:100,300" rel="stylesheet">
-
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
     <?php wp_head();
     ?>
 </head>
 
-<body data-spy="scroll" data-target="#navbarNavAltMarkup" data-offset="60" <?php body_class(); ?>>
+<body <?php body_class(); ?>>
 
-<nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+<nav id="my-navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
+    <a class="navbar-brand" href="/DineAndRide"><img src="/DineAndRide/wp-content/themes/DineAndRide/images/dine-and-ride-logov3.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
+        <ul class="navbar-nav ml-auto">
+            <?php
+            if(is_front_page() || is_home()){
+                strip_tags(wp_nav_menu(array('theme_location' => 'header-menu',
+                    'container' => false,
+                    'depth' => 0,
+                    'items_wrap'=>'%3$s')), '<a>');
+            }else{
+                strip_tags(wp_nav_menu(array('theme_location' => 'booking-menu',
+                    'container' => false,
+                    'depth' => 0,
+                    'items_wrap'=>'%3$s')), '<a>');
+            }
+            ?>
         </ul>
     </div>
 </nav>
