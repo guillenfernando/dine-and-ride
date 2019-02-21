@@ -611,12 +611,12 @@ body{
     }
 
     .booking-form-button, .contact-form-button{
-        font-size: calc(2px + 1vw);
+        font-size: calc(1px + 1vw);
     }
 
     .booking-form-wrapper{
         margin-top: 40px;
-        margin-bottom: 110px;
+        margin-bottom: 140px;
     }
 
     .contact-form-wrapper{
@@ -626,6 +626,10 @@ body{
 
     .contact-wrapper .form-subtitle{
         margin-top: calc(20px + 6vw);
+    }
+
+    .contact-wrapper{
+        padding-bottom: 70px;
     }
 
 }

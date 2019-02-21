@@ -76,9 +76,9 @@ get_header()
                                 <div class="col-11 col-sm-6 col-xl-12">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                            <label class="input-group-text" for="inputGroupSelect01">Adults (6+ years)</label>
+                                            <label class="input-group-text" for="selectAdult">Adults (6+ years)</label>
                                         </div>
-                                        <select class="custom-select" id="inputGroupSelect01">
+                                        <select class="custom-select" id="selectAdult">
                                             <option selected>Choose...</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -93,9 +93,9 @@ get_header()
                                 <div class="col-11 col-sm-6 col-xl-12">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                            <label class="input-group-text" for="inputGroupSelect01">Kids (0-6 years)</label>
+                                            <label class="input-group-text" for="selectKid">Kids (0-6 years)</label>
                                         </div>
-                                        <select class="custom-select" id="inputGroupSelect01">
+                                        <select class="custom-select" id="selectKid">
                                             <option selected>Choose...</option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
@@ -106,21 +106,31 @@ get_header()
                                 </div>
                             </div>
 
+                            <script>
+                                var today = new Date();
+                                var dd = today.getDate();
+                                var mm = today.getMonth() + 1; //January is 0!
+                                var yyyy = today.getFullYear();
+
+                                if (dd < 10) {
+                                    dd = '0' + dd;
+                                }
+
+                                if (mm < 10) {
+                                    mm = '0' + mm;
+                                }
+
+                                today = yyyy + '-' + mm + '-' + dd + 'T' + '07:00' ;
+                                console.log(today);
+                            </script>
+
                             <div class="form-row justify-content-center">
-                                <div class="col-11 col-sm-6 col-xl-12">
+                                <div class="col-11 col-sm-12">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                            <label class="input-group-text" for="inputGroupSelect01">Pickup date</label>
+                                            <label class="input-group-text" for="booking-datetime">Pickup date / time</label>
                                         </div>
-                                        <input type="date" id="booking-date" value="" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-11 col-sm-6 col-xl-12">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <label class="input-group-text" for="inputGroupSelect01">Pickup time</label>
-                                        </div>
-                                        <input type="time" id="booking-time" value="" class="form-control">
+                                        <input type="datetime-local" id="booking-datetime" value="" class="form-control" min="<script type='text/javascript'>document.innerHTML(today)</script>">
                                     </div>
                                 </div>
                             </div>
@@ -129,7 +139,7 @@ get_header()
                                 <div class="col-11 col-sm-12">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                            <label class="input-group-text" for="inputGroupSelect01">Restaurant Selected</label>
+                                            <label class="input-group-text" for="booking-restaurant">Restaurant Selected</label>
                                         </div>
                                         <input type="text" id="booking-restaurant" value="" class="form-control" readonly>
                                     </div>
@@ -140,7 +150,7 @@ get_header()
                                 <div class="col-11 col-sm-12">
                                     <div class="input-group mb-3">
                                         <div class="input-group-prepend">
-                                            <label class="input-group-text" for="inputGroupSelect01">Pickup Address</label>
+                                            <label class="input-group-text" for="booking-pickup">Pickup Address</label>
                                         </div>
                                         <input type="text" id="booking-pickup" value="" class="form-control" readonly>
                                     </div>
@@ -207,6 +217,8 @@ get_header()
         }
 
         $("#restaurants-associated .restaurant-list").html("");
+
+        $("#booking-restaurant").val("");
     }
 
     function selectRestaurant(restaurant) {
@@ -266,11 +278,6 @@ get_header()
                     restaurant.marker = marker;
                     mapRestaurants[index] = restaurant;
                     addRestaurantToList(restaurant);
-
-                    //TEST
-
-                    //console.log(result.restaurants[0].name);
-
 
                 });
             });
