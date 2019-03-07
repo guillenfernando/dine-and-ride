@@ -1,0 +1,355 @@
+0000.000 (0) Opened log file at time: Thu, 28 Feb 2019 23:19:54 +0000 on http://localhost:8888/DineAndRide
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.6 WP: 5.0.3 PHP: 7.2.7 (apache2handler, Darwin coruscant-2.local 16.7.0 Darwin Kernel Version 16.7.0: Thu Jun 21 20:07:39 PDT 2018; root:xnu-3789.73.14~1/RELEASE_X86_64 x86_64) MySQL: 5.7.21 WPLANG: en_US Server: Apache/2.2.34 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.2.7 mod_ssl/2.2.34 OpenSSL/1.0.2o DAV/2 mod_fastcgi/mod_fastcgi-SNAP-0910052141 mod_perl/2.0.9 Perl/v5.24.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 23.7M | 2M) multisite: N openssl: OpenSSL 1.0.2o  27 Mar 2018 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.003 (0) Free space on disk containing Updraft's temporary directory: 148769.3 MB
+0000.004 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.011 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.013 (0) Set semaphore last lock (fd) time to 2019-02-28 23:19:54
+0000.013 (0) Semaphore lock (fd) complete
+0000.016 (0) Backup run: resumption=0, nonce=417f143fcf55, file_nonce=417f143fcf55 begun at=1551395994 (0s ago), job type=backup
+0000.018 (0) Scheduling a resumption (1) after 300 seconds (1551396294) in case this run gets aborted
+0000.031 (0) Checking if we have a zip executable available
+0000.032 (0) Testing: /usr/bin/zip
+0000.040 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.041 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.042 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.042 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.043 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.051 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.053 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.064 (0) Working binary zip found: /usr/bin/zip
+0000.066 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.067 (0) Creation of backups of directories: beginning
+0000.070 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.120 (0) Total entities for the zip file: 252 directories, 1536 files (0 skipped as non-modified), 25.8 MB
+0000.126 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.131 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.135 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.140 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.143 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.144 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (20.9 MB, 1536 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0000.944 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: size is now: 6.70 MB
+0000.949 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: 600 files added (on-disk size: 6856.9 KB)
+0000.953 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: 700 files added (on-disk size: 6856.9 KB)
+0000.957 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: 800 files added (on-disk size: 6856.9 KB)
+0000.962 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: 900 files added (on-disk size: 6856.9 KB)
+0000.966 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: 1000 files added (on-disk size: 6856.9 KB)
+0000.967 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.3 MB, 1536 files batched, 501 (1002) added so far); re-opening (prior size: 6856.9 KB)
+0001.109 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: 1100 files added (on-disk size: 7719.5 KB)
+0001.114 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: 1200 files added (on-disk size: 7719.5 KB)
+0001.118 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: 1300 files added (on-disk size: 7719.5 KB)
+0001.122 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: 1400 files added (on-disk size: 7719.5 KB)
+0001.126 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip.tmp: 1500 files added (on-disk size: 7719.5 KB)
+0001.127 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.5 MB, 1536 files batched, 501 (1503) added so far); re-opening (prior size: 7719.5 KB)
+0001.531 (0) Created plugins zip (0) - 8612.3 KB in 1.5 s (5897.5 KB/s) (sha1: 2d377a05db5726eb619f64b3c673f646b2e6660f, sha256: fb6e4f3964a651b35cfae841bcbeb5bdcd529dff2785b09e29cc788fb41a7c2a)
+0001.534 (0) Beginning creation of dump of themes (split every: 400 MB)
+0001.543 (0) Total entities for the zip file: 47 directories, 232 files (0 skipped as non-modified), 7.7 MB
+0001.548 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0001.552 (0) Zip: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0001.649 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-themes.zip.tmp: size is now: 6.70 MB
+0001.831 (0) Created themes zip (0) - 6856 KB in 0.3 s (23230.4 KB/s) (sha1: 0312951667d19c8fac6f412b8c7aa90a14996045, sha256: 3fbadd04752b5e0f18373b3e253946527383af0d0dfe4f99a2f76dbf7a4fa328)
+0001.833 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0001.834 (0) Looking for candidates to backup in: /Applications/MAMP/htdocs/DineAndRide/wp-content/uploads
+0001.835 (0) finding files: 2019: adding to list (1)
+0001.836 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0001.838 (0) Total entities for the zip file: 3 directories, 2 files (0 skipped as non-modified), 0 MB
+0001.849 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-uploads.zip.tmp: size is now: 0.00 MB
+0001.855 (0) Created uploads zip (0) - 13.7 KB in 0 s (737.1 KB/s) (sha1: 31b16f59692c53ec896c8d067f7d7e2b6272e731, sha256: e548ec26ba15fa883b39a073196b3db355f71793f57821ffb2ab0e3d6e124c29)
+0001.858 (0) Beginning backup of other directories found in the content directory (index: 0)
+0001.858 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0001.859 (0) Looking for candidates to backup in: /Applications/MAMP/htdocs/DineAndRide/wp-content
+0001.860 (0) finding files: .DS_Store: adding to list (1)
+0001.860 (0) finding files: index.php: adding to list (2)
+0001.861 (0) finding files: plugins: skipping: this is the plugins directory
+0001.862 (0) finding files: themes: skipping: this is the themes directory
+0001.862 (0) finding files: updraft: skipping: this is the updraft directory
+0001.863 (0) finding files: upgrade: skipping: excluded by options
+0001.864 (0) finding files: uploads: skipping: this is the uploads directory
+0001.867 (0) Total entities for the zip file: 0 directories, 2 files (0 skipped as non-modified), 0 MB
+0001.875 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-others.zip.tmp: size is now: 0.00 MB
+0001.880 (0) Created others zip (0) - 0.8 KB in 0 s (55.7 KB/s) (sha1: 21103332f0256ce034dcd13ee1a17f37ff5fc077, sha256: 4c730c6fe93b91c98ffa9dcba85eab2d33c5ac9ba4be236a5123ce0abe0b7678)
+0001.884 (0) Saving backup status to database (elements: 8)
+0001.887 (0) Beginning creation of database dump (WordPress DB)
+0001.888 (0) Testing potential mysqldump binary: /usr/local/bin/mysqldump
+0001.905 (0) Binary mysqldump: error (code: 2)
+0001.913 (0) Table wp_options: Total expected rows (approximate): 603
+0001.961 (0) Table wp_options: Total rows added: 604 in 0.05 seconds
+0001.965 (0) Table wp_options: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_options.table.gz - 130.3 KB)
+0001.969 (0) Table wp_users: Total expected rows (approximate): 0
+0001.970 (0) Table wp_users: Total rows added: 1 in 0.00 seconds
+0001.971 (0) Table wp_users: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_users.table.gz - 0.6 KB)
+0001.974 (0) Table wp_usermeta: Total expected rows (approximate): 17
+0001.976 (0) Table wp_usermeta: Total rows added: 25 in 0.00 seconds
+0001.977 (0) Table wp_usermeta: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_usermeta.table.gz - 1.1 KB)
+0001.981 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0001.983 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0001.984 (0) Table wp_commentmeta: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0001.987 (0) Table wp_comments: Total expected rows (approximate): 0
+0001.989 (0) Table wp_comments: Total rows added: 1 in 0.00 seconds
+0001.990 (0) Table wp_comments: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_comments.table.gz - 0.7 KB)
+0001.993 (0) Table wp_links: Total expected rows (approximate): 0
+0001.994 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0001.995 (0) Table wp_links: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_links.table.gz - 0.4 KB)
+0001.999 (0) Table wp_postmeta: Total expected rows (approximate): 126
+0002.002 (0) Table wp_postmeta: Total rows added: 129 in 0.00 seconds
+0002.003 (0) Table wp_postmeta: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_postmeta.table.gz - 1.8 KB)
+0002.006 (0) Table wp_posts: Total expected rows (approximate): 36
+0002.010 (0) Table wp_posts: Total rows added: 37 in 0.00 seconds
+0002.011 (0) Table wp_posts: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_posts.table.gz - 4.2 KB)
+0002.015 (0) Table wp_term_relationships: Total expected rows (approximate): 8
+0002.016 (0) Table wp_term_relationships: Total rows added: 9 in 0.00 seconds
+0002.017 (0) Table wp_term_relationships: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_term_relationships.table.gz - 0.4 KB)
+0002.020 (0) Table wp_term_taxonomy: Total expected rows (approximate): 3
+0002.022 (0) Table wp_term_taxonomy: Total rows added: 3 in 0.00 seconds
+0002.023 (0) Table wp_term_taxonomy: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_term_taxonomy.table.gz - 0.4 KB)
+0002.026 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0002.027 (0) Table wp_termmeta: Total rows added: 0 in 0.00 seconds
+0002.028 (0) Table wp_termmeta: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_termmeta.table.gz - 0.4 KB)
+0002.032 (0) Table wp_terms: Total expected rows (approximate): 3
+0002.034 (0) Table wp_terms: Total rows added: 3 in 0.00 seconds
+0002.034 (0) Table wp_terms: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_terms.table.gz - 0.4 KB)
+0002.037 (0) Table wp_dopbsp_api_keys: Total expected rows (approximate): 0
+0002.039 (0) Table wp_dopbsp_api_keys: Total rows added: 1 in 0.00 seconds
+0002.040 (0) Table wp_dopbsp_api_keys: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_api_keys.table.gz - 0.4 KB)
+0002.043 (0) Table wp_dopbsp_availability: Total expected rows (approximate): 0
+0002.045 (0) Table wp_dopbsp_availability: Total rows added: 0 in 0.00 seconds
+0002.045 (0) Table wp_dopbsp_availability: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_availability.table.gz - 0.3 KB)
+0002.049 (0) Table wp_dopbsp_availability_no: Total expected rows (approximate): 0
+0002.051 (0) Table wp_dopbsp_availability_no: Total rows added: 0 in 0.00 seconds
+0002.052 (0) Table wp_dopbsp_availability_no: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_availability_no.table.gz - 0.3 KB)
+0002.055 (0) Table wp_dopbsp_availability_price: Total expected rows (approximate): 0
+0002.057 (0) Table wp_dopbsp_availability_price: Total rows added: 0 in 0.00 seconds
+0002.057 (0) Table wp_dopbsp_availability_price: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_availability_price.table.gz - 0.3 KB)
+0002.061 (0) Table wp_dopbsp_calendars: Total expected rows (approximate): 0
+0002.063 (0) Table wp_dopbsp_calendars: Total rows added: 1 in 0.00 seconds
+0002.064 (0) Table wp_dopbsp_calendars: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_calendars.table.gz - 0.6 KB)
+0002.068 (0) Table wp_dopbsp_coupons: Total expected rows (approximate): 0
+0002.069 (0) Table wp_dopbsp_coupons: Total rows added: 0 in 0.00 seconds
+0002.070 (0) Table wp_dopbsp_coupons: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_coupons.table.gz - 0.4 KB)
+0002.073 (0) Table wp_dopbsp_days: Total expected rows (approximate): 0
+0002.075 (0) Table wp_dopbsp_days: Total rows added: 0 in 0.00 seconds
+0002.075 (0) Table wp_dopbsp_days: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_days.table.gz - 0.4 KB)
+0002.079 (0) Table wp_dopbsp_discounts: Total expected rows (approximate): 0
+0002.081 (0) Table wp_dopbsp_discounts: Total rows added: 0 in 0.00 seconds
+0002.082 (0) Table wp_dopbsp_discounts: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_discounts.table.gz - 0.4 KB)
+0002.085 (0) Table wp_dopbsp_discounts_items: Total expected rows (approximate): 0
+0002.086 (0) Table wp_dopbsp_discounts_items: Total rows added: 0 in 0.00 seconds
+0002.087 (0) Table wp_dopbsp_discounts_items: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_discounts_items.table.gz - 0.4 KB)
+0002.090 (0) Table wp_dopbsp_discounts_items_rules: Total expected rows (approximate): 0
+0002.092 (0) Table wp_dopbsp_discounts_items_rules: Total rows added: 0 in 0.00 seconds
+0002.093 (0) Table wp_dopbsp_discounts_items_rules: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_discounts_items_rules.table.gz - 0.4 KB)
+0002.096 (0) Table wp_dopbsp_emails: Total expected rows (approximate): 0
+0002.098 (0) Table wp_dopbsp_emails: Total rows added: 1 in 0.00 seconds
+0002.099 (0) Table wp_dopbsp_emails: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_emails.table.gz - 0.4 KB)
+0002.102 (0) Table wp_dopbsp_emails_translation: Total expected rows (approximate): 7
+0002.104 (0) Table wp_dopbsp_emails_translation: Total rows added: 7 in 0.00 seconds
+0002.105 (0) Table wp_dopbsp_emails_translation: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_emails_translation.table.gz - 0.8 KB)
+0002.108 (0) Table wp_dopbsp_extras: Total expected rows (approximate): 0
+0002.109 (0) Table wp_dopbsp_extras: Total rows added: 1 in 0.00 seconds
+0002.110 (0) Table wp_dopbsp_extras: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_extras.table.gz - 0.4 KB)
+0002.114 (0) Table wp_dopbsp_extras_groups: Total expected rows (approximate): 2
+0002.116 (0) Table wp_dopbsp_extras_groups: Total rows added: 2 in 0.00 seconds
+0002.117 (0) Table wp_dopbsp_extras_groups: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_extras_groups.table.gz - 0.5 KB)
+0002.120 (0) Table wp_dopbsp_extras_groups_items: Total expected rows (approximate): 9
+0002.122 (0) Table wp_dopbsp_extras_groups_items: Total rows added: 9 in 0.00 seconds
+0002.123 (0) Table wp_dopbsp_extras_groups_items: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_extras_groups_items.table.gz - 0.6 KB)
+0002.126 (0) Table wp_dopbsp_fees: Total expected rows (approximate): 0
+0002.128 (0) Table wp_dopbsp_fees: Total rows added: 0 in 0.00 seconds
+0002.128 (0) Table wp_dopbsp_fees: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_fees.table.gz - 0.4 KB)
+0002.132 (0) Table wp_dopbsp_forms: Total expected rows (approximate): 0
+0002.134 (0) Table wp_dopbsp_forms: Total rows added: 1 in 0.00 seconds
+0002.135 (0) Table wp_dopbsp_forms: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_forms.table.gz - 0.4 KB)
+0002.138 (0) Table wp_dopbsp_forms_fields: Total expected rows (approximate): 5
+0002.140 (0) Table wp_dopbsp_forms_fields: Total rows added: 5 in 0.00 seconds
+0002.141 (0) Table wp_dopbsp_forms_fields: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_forms_fields.table.gz - 0.6 KB)
+0002.144 (0) Table wp_dopbsp_forms_select_options: Total expected rows (approximate): 0
+0002.145 (0) Table wp_dopbsp_forms_select_options: Total rows added: 0 in 0.00 seconds
+0002.146 (0) Table wp_dopbsp_forms_select_options: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_forms_select_options.table.gz - 0.4 KB)
+0002.150 (0) Table wp_dopbsp_languages: Total expected rows (approximate): 56
+0002.153 (0) Table wp_dopbsp_languages: Total rows added: 56 in 0.00 seconds
+0002.154 (0) Table wp_dopbsp_languages: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_languages.table.gz - 1.5 KB)
+0002.157 (0) Table wp_dopbsp_locations: Total expected rows (approximate): 0
+0002.158 (0) Table wp_dopbsp_locations: Total rows added: 1 in 0.00 seconds
+0002.159 (0) Table wp_dopbsp_locations: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_locations.table.gz - 0.5 KB)
+0002.163 (0) Table wp_dopbsp_models: Total expected rows (approximate): 0
+0002.165 (0) Table wp_dopbsp_models: Total rows added: 0 in 0.00 seconds
+0002.166 (0) Table wp_dopbsp_models: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_models.table.gz - 0.4 KB)
+0002.169 (0) Table wp_dopbsp_reservations: Total expected rows (approximate): 0
+0002.171 (0) Table wp_dopbsp_reservations: Total rows added: 0 in 0.00 seconds
+0002.171 (0) Table wp_dopbsp_reservations: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_reservations.table.gz - 0.7 KB)
+0002.175 (0) Table wp_dopbsp_rules: Total expected rows (approximate): 0
+0002.176 (0) Table wp_dopbsp_rules: Total rows added: 0 in 0.00 seconds
+0002.177 (0) Table wp_dopbsp_rules: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_rules.table.gz - 0.4 KB)
+0002.181 (0) Table wp_dopbsp_searches: Total expected rows (approximate): 0
+0002.182 (0) Table wp_dopbsp_searches: Total rows added: 0 in 0.00 seconds
+0002.183 (0) Table wp_dopbsp_searches: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_searches.table.gz - 0.4 KB)
+0002.186 (0) Table wp_dopbsp_settings: Total expected rows (approximate): 0
+0002.188 (0) Table wp_dopbsp_settings: Total rows added: 0 in 0.00 seconds
+0002.188 (0) Table wp_dopbsp_settings: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_settings.table.gz - 0.3 KB)
+0002.191 (0) Table wp_dopbsp_settings_calendar: Total expected rows (approximate): 0
+0002.193 (0) Table wp_dopbsp_settings_calendar: Total rows added: 0 in 0.00 seconds
+0002.194 (0) Table wp_dopbsp_settings_calendar: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_settings_calendar.table.gz - 0.4 KB)
+0002.197 (0) Table wp_dopbsp_settings_notifications: Total expected rows (approximate): 0
+0002.199 (0) Table wp_dopbsp_settings_notifications: Total rows added: 0 in 0.00 seconds
+0002.200 (0) Table wp_dopbsp_settings_notifications: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_settings_notifications.table.gz - 0.4 KB)
+0002.203 (0) Table wp_dopbsp_settings_payment: Total expected rows (approximate): 0
+0002.204 (0) Table wp_dopbsp_settings_payment: Total rows added: 0 in 0.00 seconds
+0002.205 (0) Table wp_dopbsp_settings_payment: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_settings_payment.table.gz - 0.4 KB)
+0002.208 (0) Table wp_dopbsp_settings_search: Total expected rows (approximate): 0
+0002.210 (0) Table wp_dopbsp_settings_search: Total rows added: 0 in 0.00 seconds
+0002.211 (0) Table wp_dopbsp_settings_search: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_settings_search.table.gz - 0.4 KB)
+0002.214 (0) Table wp_dopbsp_smses: Total expected rows (approximate): 0
+0002.216 (0) Table wp_dopbsp_smses: Total rows added: 1 in 0.00 seconds
+0002.217 (0) Table wp_dopbsp_smses: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_smses.table.gz - 0.4 KB)
+0002.220 (0) Table wp_dopbsp_smses_translation: Total expected rows (approximate): 7
+0002.222 (0) Table wp_dopbsp_smses_translation: Total rows added: 7 in 0.00 seconds
+0002.222 (0) Table wp_dopbsp_smses_translation: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_smses_translation.table.gz - 0.6 KB)
+0002.225 (0) Table wp_dopbsp_translation_en: Total expected rows (approximate): 1628
+0002.261 (0) Table wp_dopbsp_translation_en: Total rows added: 1628 in 0.04 seconds
+0002.262 (0) Table wp_dopbsp_translation_en: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_translation_en.table.gz - 34.3 KB)
+0002.266 (0) Table wp_em_bookings: Total expected rows (approximate): 0
+0002.268 (0) Table wp_em_bookings: Total rows added: 0 in 0.00 seconds
+0002.269 (0) Table wp_em_bookings: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_em_bookings.table.gz - 0.5 KB)
+0002.272 (0) Table wp_em_events: Total expected rows (approximate): 1
+0002.274 (0) Table wp_em_events: Total rows added: 1 in 0.00 seconds
+0002.274 (0) Table wp_em_events: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_em_events.table.gz - 0.8 KB)
+0002.278 (0) Table wp_em_locations: Total expected rows (approximate): 0
+0002.280 (0) Table wp_em_locations: Total rows added: 1 in 0.00 seconds
+0002.281 (0) Table wp_em_locations: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_em_locations.table.gz - 0.6 KB)
+0002.284 (0) Table wp_em_meta: Total expected rows (approximate): 0
+0002.285 (0) Table wp_em_meta: Total rows added: 0 in 0.00 seconds
+0002.286 (0) Table wp_em_meta: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_em_meta.table.gz - 0.4 KB)
+0002.289 (0) Table wp_em_tickets: Total expected rows (approximate): 0
+0002.291 (0) Table wp_em_tickets: Total rows added: 1 in 0.00 seconds
+0002.292 (0) Table wp_em_tickets: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_em_tickets.table.gz - 0.5 KB)
+0002.295 (0) Table wp_em_tickets_bookings: Total expected rows (approximate): 0
+0002.297 (0) Table wp_em_tickets_bookings: Total rows added: 0 in 0.00 seconds
+0002.298 (0) Table wp_em_tickets_bookings: finishing file (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_em_tickets_bookings.table.gz - 0.3 KB)
+0002.301 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_options.table.gz (1/51): adding to final database dump
+0002.342 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_users.table.gz (2/51): adding to final database dump
+0002.345 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_usermeta.table.gz (3/51): adding to final database dump
+0002.346 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_commentmeta.table.gz (4/51): adding to final database dump
+0002.348 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_comments.table.gz (5/51): adding to final database dump
+0002.350 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_links.table.gz (6/51): adding to final database dump
+0002.351 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_postmeta.table.gz (7/51): adding to final database dump
+0002.352 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_posts.table.gz (8/51): adding to final database dump
+0002.354 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_term_relationships.table.gz (9/51): adding to final database dump
+0002.355 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_term_taxonomy.table.gz (10/51): adding to final database dump
+0002.356 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_termmeta.table.gz (11/51): adding to final database dump
+0002.356 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_terms.table.gz (12/51): adding to final database dump
+0002.357 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_api_keys.table.gz (13/51): adding to final database dump
+0002.358 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_availability.table.gz (14/51): adding to final database dump
+0002.359 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_availability_no.table.gz (15/51): adding to final database dump
+0002.359 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_availability_price.table.gz (16/51): adding to final database dump
+0002.360 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_calendars.table.gz (17/51): adding to final database dump
+0002.361 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_coupons.table.gz (18/51): adding to final database dump
+0002.362 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_days.table.gz (19/51): adding to final database dump
+0002.363 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_discounts.table.gz (20/51): adding to final database dump
+0002.364 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_discounts_items.table.gz (21/51): adding to final database dump
+0002.365 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_discounts_items_rules.table.gz (22/51): adding to final database dump
+0002.366 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_emails.table.gz (23/51): adding to final database dump
+0002.367 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_emails_translation.table.gz (24/51): adding to final database dump
+0002.368 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_extras.table.gz (25/51): adding to final database dump
+0002.368 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_extras_groups.table.gz (26/51): adding to final database dump
+0002.369 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_extras_groups_items.table.gz (27/51): adding to final database dump
+0002.370 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_fees.table.gz (28/51): adding to final database dump
+0002.371 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_forms.table.gz (29/51): adding to final database dump
+0002.371 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_forms_fields.table.gz (30/51): adding to final database dump
+0002.372 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_forms_select_options.table.gz (31/51): adding to final database dump
+0002.373 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_languages.table.gz (32/51): adding to final database dump
+0002.374 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_locations.table.gz (33/51): adding to final database dump
+0002.375 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_models.table.gz (34/51): adding to final database dump
+0002.376 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_reservations.table.gz (35/51): adding to final database dump
+0002.377 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_rules.table.gz (36/51): adding to final database dump
+0002.378 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_searches.table.gz (37/51): adding to final database dump
+0002.379 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_settings.table.gz (38/51): adding to final database dump
+0002.379 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_settings_calendar.table.gz (39/51): adding to final database dump
+0002.381 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_settings_notifications.table.gz (40/51): adding to final database dump
+0002.381 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_settings_payment.table.gz (41/51): adding to final database dump
+0002.382 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_settings_search.table.gz (42/51): adding to final database dump
+0002.383 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_smses.table.gz (43/51): adding to final database dump
+0002.384 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_smses_translation.table.gz (44/51): adding to final database dump
+0002.384 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_dopbsp_translation_en.table.gz (45/51): adding to final database dump
+0002.403 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_em_bookings.table.gz (46/51): adding to final database dump
+0002.404 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_em_events.table.gz (47/51): adding to final database dump
+0002.405 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_em_locations.table.gz (48/51): adding to final database dump
+0002.406 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_em_meta.table.gz (49/51): adding to final database dump
+0002.407 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_em_tickets.table.gz (50/51): adding to final database dump
+0002.408 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db-table-wp_em_tickets_bookings.table.gz (51/51): adding to final database dump
+0002.408 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db.gz: finished writing out complete database file (152 KB)
+0002.422 (0) Total database tables backed up: 51 (backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db.gz, size: 182611, sha256)
+0002.427 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0002.428 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0002.429 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0002.429 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-others.zip: others: This file has not yet been successfully uploaded: will queue
+0002.430 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db.gz: db: This file has not yet been successfully uploaded: will queue
+0002.431 (0) Saving backup history. Total backup size: 15.3 MB
+0002.434 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0002.436 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0002.437 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-11370965e4bde4a427ddfdd058fd389c)
+0003.042 (0) Google Drive: creating path: /UpdraftPlus
+0004.045 (0) Google Drive quota usage: used=14.2 MB, total=15360 MB, available=15345.8 MB
+0004.047 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip: Attempting to upload to Google Drive (into folder id: 1rQUIH61UL0dPeZs4VkrEerfFFe26zbMF)
+0005.224 (0) Googledrive chunked upload: 11.9 % uploaded (1048576)
+0005.889 (0) Googledrive chunked upload: 23.8 % uploaded (2097152)
+0007.156 (0) Googledrive chunked upload: 35.7 % uploaded (3145728)
+0008.154 (0) Googledrive chunked upload: 47.6 % uploaded (4194304)
+0009.463 (0) Googledrive chunked upload: 59.4 % uploaded (5242880)
+0012.319 (0) Googledrive chunked upload: 71.3 % uploaded (6291456)
+0013.691 (0) Googledrive chunked upload: 83.2 % uploaded (7340032)
+0015.089 (0) Googledrive chunked upload: 95.1 % uploaded (8388608)
+0016.310 (0) Googledrive chunked upload: 100 % uploaded (8388608)
+0016.314 (0) OK: Archive backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip uploaded to Google Drive in 12.27 seconds
+0016.315 (0) Recording as successfully uploaded: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip
+0016.317 (0) Deleting local file: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-plugins.zip: OK
+0016.582 (0) Google Drive quota usage: used=22.6 MB, total=15360 MB, available=15337.4 MB
+0016.585 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-themes.zip: Attempting to upload to Google Drive (into folder id: 1rQUIH61UL0dPeZs4VkrEerfFFe26zbMF)
+0017.573 (0) Googledrive chunked upload: 14.9 % uploaded (1048576)
+0018.252 (0) Googledrive chunked upload: 29.9 % uploaded (2097152)
+0019.127 (0) Googledrive chunked upload: 44.8 % uploaded (3145728)
+0020.347 (0) Googledrive chunked upload: 59.7 % uploaded (4194304)
+0021.077 (0) Googledrive chunked upload: 74.7 % uploaded (5242880)
+0021.780 (0) Googledrive chunked upload: 89.6 % uploaded (6291456)
+0023.272 (0) Googledrive chunked upload: 100 % uploaded (6291456)
+0023.275 (0) OK: Archive backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-themes.zip uploaded to Google Drive in 6.69 seconds
+0023.275 (0) Recording as successfully uploaded: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-themes.zip
+0023.278 (0) Deleting local file: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-themes.zip: OK
+0023.554 (0) Google Drive quota usage: used=22.6 MB, total=15360 MB, available=15337.4 MB
+0023.557 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-uploads.zip: Attempting to upload to Google Drive (into folder id: 1rQUIH61UL0dPeZs4VkrEerfFFe26zbMF)
+0024.681 (0) Googledrive chunked upload: 100 % uploaded
+0024.684 (0) OK: Archive backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-uploads.zip uploaded to Google Drive in 1.13 seconds
+0024.685 (0) Recording as successfully uploaded: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-uploads.zip
+0024.687 (0) Deleting local file: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-uploads.zip: OK
+0024.877 (0) Google Drive quota usage: used=29.3 MB, total=15360 MB, available=15330.7 MB
+0024.880 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-others.zip: Attempting to upload to Google Drive (into folder id: 1rQUIH61UL0dPeZs4VkrEerfFFe26zbMF)
+0025.932 (0) Googledrive chunked upload: 100 % uploaded
+0025.935 (0) OK: Archive backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-others.zip uploaded to Google Drive in 1.05 seconds
+0025.936 (0) Recording as successfully uploaded: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-others.zip
+0025.938 (0) Deleting local file: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-others.zip: OK
+0026.122 (0) Google Drive quota usage: used=29.3 MB, total=15360 MB, available=15330.7 MB
+0026.125 (0) backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db.gz: Attempting to upload to Google Drive (into folder id: 1rQUIH61UL0dPeZs4VkrEerfFFe26zbMF)
+0027.317 (0) Googledrive chunked upload: 100 % uploaded
+0027.321 (0) OK: Archive backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db.gz uploaded to Google Drive in 1.19 seconds
+0027.321 (0) Recording as successfully uploaded: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db.gz
+0027.323 (0) Deleting local file: backup_2019-02-28-2319_Dine_amp_Ride_417f143fcf55-db.gz: OK
+0027.325 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0027.327 (0) Number of backup sets in history: 2; groups (db): 1
+0027.327 (0) Examining (for databases) backup set with group_id=0, nonce=417f143fcf55, datestamp=1551395994 (Feb 28 2019 23:19:54)
+0027.328 (0) This backup set is the backup set just made, so will not be deleted.
+0027.328 (0) Examining (for databases) backup set with group_id=0, nonce=b9c600d1ae20, datestamp=1551395652 (Feb 28 2019 23:14:12)
+0027.328 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0027.329 (0) Number of backup sets in history: 2; groups (files): 1
+0027.329 (0) Examining (for files) backup set with nonce=417f143fcf55, datestamp=1551395994 (Feb 28 2019 23:19:54)
+0027.329 (0) This backup set is the backup set just made, so will not be deleted.
+0027.330 (0) This backup set is the backup set just made, so will not be deleted.
+0027.330 (0) This backup set is the backup set just made, so will not be deleted.
+0027.330 (0) This backup set is the backup set just made, so will not be deleted.
+0027.331 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0027.331 (0) Examining (for files) backup set with nonce=b9c600d1ae20, datestamp=1551395652 (Feb 28 2019 23:14:12)
+0027.331 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0027.331 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0027.334 (0) Resume backup (417f143fcf55, 0): finish run
+0027.335 (0) Decremented the semaphore (fd) by 1
+0027.336 (0) Semaphore (fd) unlocked
+0027.337 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0027.339 (0) No email will/can be sent - the user has not configured an email address.
+0027.340 (0) The backup apparently succeeded and is now complete

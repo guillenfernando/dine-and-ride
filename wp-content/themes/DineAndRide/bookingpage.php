@@ -47,7 +47,7 @@ get_header()
                     </div>
 
                     <div class="col-12 col-xl-5">
-                        <form method="post">
+                        <form id="bookingForm">
                             <div class="form-row">
                                 <div class="col-12">
                                     <h6 class="schedule-note">Please select a Pickup time between 5pm and 10pm.</h6>
@@ -56,19 +56,19 @@ get_header()
 
                             <div class="form-row justify-content-center">
                                 <div class="form-group col-11 col-sm-6 col-xl-12">
-                                    <input type="text" id="first-name" value="" class="form-control" placeholder="First name">
+                                    <input type="text" id="first-name" name="first_name" value="" class="form-control" placeholder="First name" required>
                                 </div>
                                 <div class="form-group col-11 col-sm-6 col-xl-12">
-                                    <input type="text" id="last-name" value="" class="form-control" placeholder="Last name">
+                                    <input type="text" id="last-name" name="last_name" value="" class="form-control" placeholder="Last name" required>
                                 </div>
                             </div>
 
                             <div class="form-row justify-content-center">
                                 <div class="form-group col-11 col-sm-6 col-xl-12">
-                                    <input type="email" id="customer-email" value="" class="form-control" placeholder="Email address">
+                                    <input type="email" id="customer-email" name="email" value="" class="form-control" placeholder="Email address" required>
                                 </div>
                                 <div class="form-group col-11 col-sm-6 col-xl-12">
-                                    <input type="text" id="customer-phone" value="" class="form-control" placeholder="Phone number">
+                                    <input type="text" id="customer-phone" name="phone" value="" class="form-control" placeholder="Phone number" required>
                                 </div>
                             </div>
 
@@ -78,8 +78,8 @@ get_header()
                                         <div class="input-group-prepend">
                                             <label class="input-group-text" for="selectAdult">Adults (6+ years)</label>
                                         </div>
-                                        <select class="custom-select" id="selectAdult">
-                                            <option selected>Choose...</option>
+                                        <select required="required" class="custom-select" id="selectAdult" name="adults">
+                                            <option value="" selected>Choose...</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>
@@ -95,8 +95,8 @@ get_header()
                                         <div class="input-group-prepend">
                                             <label class="input-group-text" for="selectKid">Kids (0-6 years)</label>
                                         </div>
-                                        <select class="custom-select" id="selectKid">
-                                            <option selected>Choose...</option>
+                                        <select required class="custom-select" id="selectKid" name="kids">
+                                            <option value="" selected>Choose...</option>
                                             <option value="0">0</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -121,7 +121,6 @@ get_header()
                                 }
 
                                 today = yyyy + '-' + mm + '-' + dd + 'T' + '07:00' ;
-                                console.log(today);
                             </script>
 
                             <div class="form-row justify-content-center">
@@ -130,18 +129,7 @@ get_header()
                                         <div class="input-group-prepend">
                                             <label class="input-group-text" for="booking-datetime">Pickup date / time</label>
                                         </div>
-                                        <input type="datetime-local" id="booking-datetime" value="" class="form-control" min="<script type='text/javascript'>document.innerHTML(today)</script>">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="form-row justify-content-center">
-                                <div class="col-11 col-sm-12">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-prepend">
-                                            <label class="input-group-text" for="booking-restaurant">Restaurant Selected</label>
-                                        </div>
-                                        <input type="text" id="booking-restaurant" value="" class="form-control" readonly>
+                                        <input type="datetime-local" name="pickup_time" id="booking-datetime" value="" class="form-control" min="<script type='text/javascript'>document.innerHTML(today)</script>" required>
                                     </div>
                                 </div>
                             </div>
@@ -152,14 +140,26 @@ get_header()
                                         <div class="input-group-prepend">
                                             <label class="input-group-text" for="booking-pickup">Pickup Address</label>
                                         </div>
-                                        <input type="text" id="booking-pickup" value="" class="form-control" readonly>
+                                        <input type="text" name="pickup_address" id="booking-pickup" value="" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row justify-content-center">
+                                <div class="col-11 col-sm-12">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="booking-restaurant">Restaurant Selected</label>
+                                        </div>
+                                        <input type="text" id="booking-restaurant" value="" class="form-control" readonly required>
+                                        <input type="hidden" id="restaurant_id" name="restaurant_id" />
                                     </div>
                                 </div>
                             </div>
 
                             <div class="form-row justify-content-center">
                                 <div class="col-11 col-lg-10">
-                                    <button type="button" class="btn booking-form-button btn-lg btn-block">Booking</button>
+                                    <input type="submit" class="btn booking-form-button btn-lg btn-block" value="Booking" id="booking-button"/>
                                 </div>
                             </div>
                         </form>
@@ -178,18 +178,7 @@ get_header()
         $('#booking-pickup').val($(this).val());
     });
 
-    <?php
-
-    include_once('geoPHP/geoPHP.inc');
-    function wkb_to_json($wkb) {
-        $geom = geoPHP::load($wkb,'wkb');
-        return $geom->out('json');
-    }
-
-    mysqli_close($link);
-    ?>
-
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZ3VpbGxlbmZlcm5hbmRvIiwiYSI6ImNqcnkxbGUxejB0a2E0NG84MnhndHpqbzUifQ.wEnS2HPde_gDPhKMjy4I5A';
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWFyY29zY2hhY29uIiwiYSI6ImNqc3A0NHZiZzB0aWQ0NXA5ZzIxMjJpM2IifQ.CV6KhZnXck0Nm7Kufs-2pA';
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v9',
@@ -222,6 +211,7 @@ get_header()
     }
 
     function selectRestaurant(restaurant) {
+        $("#restaurant_id").val(restaurant.id);
         $("#booking-restaurant").val(restaurant.name + ' (' + restaurant.address + ')');
     }
 

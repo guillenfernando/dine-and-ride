@@ -90,6 +90,50 @@ body{
     max-width: 200px;
 }
 
+.has-error input[type="text"], .has-error input[type="email"], .has-error input[type="datetime-local"], .has-error select {
+    border: 1px solid #a94442;
+}
+
+form#bookingForm input:required:valid, form#contactForm input:required:valid{
+    border-color: #4ad140;
+    transition: border-color .5s ease-out;
+}
+
+form#bookingForm input:invalid, form#contactForm input:invalid{
+    border-color: #ce0c0c;
+    transition: border-color .5s ease-out;
+}
+
+form#bookingForm input:required:focus:valid, form#contactForm input:required:focus:valid{
+     border-color: blue;
+     transition: border-color .5s ease-out;
+ }
+
+form#bookingForm input:focus:invalid, form#contactForm input:focus:invalid{
+    border-color: blue;
+    transition: border-color .5s ease-out;
+}
+
+form#bookingForm select:required:valid, form#contactForm textarea:required:valid{
+    border-color: #4ad140;
+    transition: border-color .5s ease-out;
+}
+
+form#bookingForm select:invalid, form#contactForm textarea:invalid{
+    border-color: #ce0c0c;
+    transition: border-color .5s ease-out;
+}
+
+form#bookingForm select:required:focus:valid, form#contactForm textarea:required:focus:valid{
+    border-color: blue;
+    transition: border-color .5s ease-out;
+}
+
+form#bookingForm select:focus:invalid, form#contactForm textarea:focus:invalid{
+    border-color: blue;
+    transition: border-color .5s ease-out;
+}
+
 .form-subtitle{
     padding-top: 34px;
     color: #003300;
@@ -149,7 +193,13 @@ body{
     font-style: italic;
 }
 
-.booking-description, .contact-description{
+.confirmation-wrapper{
+    background-color: #fafafa;
+    padding-top: calc(12px + 38vw);
+    padding-bottom: calc(12px + 76vw);
+}
+
+.booking-description, .contact-description, .confirmation-description{
     color: #003300;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -199,7 +249,7 @@ body{
     margin: 16px 0;
 }
 
-.booking-form-button, .contact-form-button{
+.booking-form-button, .contact-form-button, .confirmation-button{
     font-size: calc(10px + 1vw);
     border-radius: 20px;
     border-width: 2px;
@@ -208,12 +258,12 @@ body{
     border-color: #33bb77;
 }
 
-.booking-form-button:hover, .booking-form-button:active, .booking-form-button:focus, .contact-form-button:hover, .contact-form-button:active, .contact-form-button:focus{
+.booking-form-button:hover, .booking-form-button:active, .booking-form-button:focus, .contact-form-button:hover, .contact-form-button:active, .contact-form-button:focus, .confirmation-button:hover, .confirmation-button:active, .confirmation-button:focus{
     background-color: #003300;
     border-color: #003300;
 }
 
-.subtitle-fpage{
+.subtitle-fpage, .confirmation-title{
     font-size: calc(12px + 2vw);
     font-weight: 600;
     text-align: center;
@@ -351,6 +401,10 @@ body{
         font-size: calc(5px + 2vw);
     }
 
+    .confirmation-wrapper{
+        padding-bottom: calc(10px + 63vw);
+    }
+
 }
 
 
@@ -365,7 +419,7 @@ body{
         padding-top: 10px;
     }
 
-    .subtitle-fpage{
+    .subtitle-fpage, .confirmation-title{
         font-size: calc(9px + 2vw);
     }
 
@@ -422,13 +476,18 @@ body{
         font-size: calc(3px + 2vw);
     }
 
-    .booking-description, .contact-description{
+    .booking-description, .contact-description, .confirmation-description{
         font-size: calc(2px + 2vw);
     }
 
     .contact-form-wrapper{
         padding-top: calc(8px + 2vw);
         padding-bottom: calc(8px + 2vw);
+    }
+
+    .confirmation-wrapper{
+        padding-top: calc(12px + 28vw);
+        padding-bottom: calc(10px + 51vw);
     }
 
 }
@@ -442,7 +501,7 @@ body{
         line-height: calc(16px + 2vw);
     }
 
-    .subtitle-fpage{
+    .subtitle-fpage, .confirmation-title{
         font-size: calc(7px + 2vw);
     }
 
@@ -509,11 +568,11 @@ body{
         font-size: calc(1px + 2vw);
     }
 
-    .booking-description, .contact-description{
+    .booking-description, .contact-description, .confirmation-description{
         font-size: calc(1px + 2vw);
     }
 
-    .booking-form-button, .contact-form-button{
+    .booking-form-button, .contact-form-button, .confirmation-button{
         font-size: calc(6px + 1vw);
     }
 
@@ -524,6 +583,11 @@ body{
     .contact-form-wrapper{
         padding-top: calc(8px + 2vw);
         padding-bottom: calc(8px + 2vw);
+    }
+
+    .confirmation-wrapper{
+        padding-top: calc(12px + 26vw);
+        padding-bottom: calc(10px + 35vw);
     }
 
 }
@@ -542,7 +606,7 @@ body{
         line-height: calc(16px + 2vw);
     }
 
-    .subtitle-fpage{
+    .subtitle-fpage, .confirmation-title{
         font-size: calc(4px + 2vw);
     }
 
@@ -601,7 +665,7 @@ body{
         font-size: calc(14px + 1vw);
     }
 
-    .booking-description, .contact-description{
+    .booking-description, .contact-description, .confirmation-description{
         font-size: calc(5px + 1vw);
     }
 
@@ -610,7 +674,7 @@ body{
         padding: 0px;
     }
 
-    .booking-form-button, .contact-form-button{
+    .booking-form-button, .contact-form-button, .confirmation-button{
         font-size: calc(1px + 1vw);
     }
 
@@ -630,6 +694,11 @@ body{
 
     .contact-wrapper{
         padding-bottom: 70px;
+    }
+
+    .confirmation-wrapper{
+        padding-top: calc(12px + 18vw);
+        padding-bottom: calc(10px + 22vw);
     }
 
 }

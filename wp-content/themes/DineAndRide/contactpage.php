@@ -19,31 +19,31 @@ get_header()
             <div class="col-11 col-lg-10 col-xl-6">
                 <div class="row align-items-center">
                     <div class="col-12">
-                        <form method="post">
+                        <form id="contactForm">
                             <div class="form-row justify-content-center">
                                 <div class="form-group col-12 col-sm-6">
-                                        <input id="contact-first-name" type="text" class="form-control" placeholder="First name">
+                                        <input name="first_name" id="contact-first-name" type="text" class="form-control" placeholder="First name" required>
                                 </div>
                                 <div class="form-group col-12 col-sm-6">
-                                        <input id="contact-last-name" type="text" class="form-control" placeholder="Last name">
+                                        <input name="last_name" id="contact-last-name" type="text" class="form-control" placeholder="Last name" required>
                                 </div>
                             </div>
                             <div class="form-row justify-content-center">
                                 <div class="form-group col-12 col-sm-6">
-                                        <input id="contact-email" type="email" class="form-control" placeholder="Email">
+                                        <input name="email" id="contact-email" type="email" class="form-control" placeholder="Email" required>
                                 </div>
                                 <div class="form-group col-12 col-sm-6">
-                                        <input id="contact-phone" type="text" class="form-control" placeholder="Phone number">
+                                        <input name="phone" id="contact-phone" type="text" class="form-control" placeholder="Phone number" required>
                                 </div>
                             </div>
                             <div class="form-row justify-content-center">
                                 <div class="form-group col-12">
-                                    <textarea class="form-control" id="contact-textarea" rows="6" placeholder="Type your message here"></textarea>
+                                    <textarea name="contact_message" class="form-control" id="contact-message" rows="6" placeholder="Type your message here" required></textarea>
                                 </div>
                             </div>
                             <div class="form-row justify-content-center">
                                 <div class="form-group col-11 col-lg-10">
-                                    <button type="button" class="btn contact-form-button btn-lg btn-block">Send</button>
+                                    <input type="submit" class="btn contact-form-button btn-lg btn-block" value="Send" id="contact-button"/>
                                 </div>
                             </div>
                         </form>
